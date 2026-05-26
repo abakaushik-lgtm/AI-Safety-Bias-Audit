@@ -200,7 +200,26 @@ To align the audit findings and mitigation strategies with professional cybersec
 
 ---
 
-## 🔮 10. Future Improvements
+## 🔧 10. Industry AI Safety & Audit Tools
+
+To implement a professional, repeatable evaluation framework, the auditing workflows and guardrail definitions simulated in this portfolio leverage concepts and patterns from leading industry open-source AI safety tools:
+
+*   **Meta Llama-Guard 3:** Utilized for Layer 2 Prompt Classification. Llama-Guard is a fine-tuned Llama model designed to classify inputs and outputs against standard safety taxonomies (e.g. self-harm, cyberattacks).
+    *   *Reference:* [Meta Llama-Guard](https://huggingface.co/meta-llama/Llama-Guard-3-8B)
+*   **garak (Generative AI Red-teaming & Assessment Kit):** The industry-standard vulnerability scanner for LLMs (often described as the "Nmap for LLMs"). We adapted garak's probe mechanics to simulate adversarial injection paths (e.g. token smuggling, encoding shifts, and roleplay splits).
+    *   *Reference:* [garak GitHub](https://github.com/leondz/garak)
+*   **Giskard:** An open-source QA framework for tabular and LLM-based systems. Giskard's core heuristics served as the model for our demographic bias audit, automating scans for occupational pronoun locks and stereotypical pathologization.
+    *   *Reference:* [Giskard GitHub](https://github.com/Giskard-AI/giskard)
+*   **DeepEval:** A metric-driven open-source LLM unit-testing framework. We structured our quantitative scorecard based on DeepEval's standard evaluators for Bias, Toxicity, and RAG Groundedness.
+    *   *Reference:* [DeepEval GitHub](https://github.com/confident-ai/deepeval)
+*   **TruLens (TruEra):** An open-source evaluation library used to track RAG triads. Our Layer 3 XML Sandboxing design is structured to satisfy TruLens' criteria for Context Relevance and Groundedness.
+    *   *Reference:* [TruLens Portal](https://www.trulens.org/)
+*   **Guardrails AI:** An open-source framework that builds real-time validation layers ("guards") around LLM outputs. Our Layer 4 Output Guardrails (pronoun-reversal pipelines and disclaimer engines) mirror Guardrails AI's structured validator schema.
+    *   *Reference:* [Guardrails AI GitHub](https://github.com/guardrails-ai/guardrails)
+
+---
+
+## 🔮 11. Future Improvements
 
 1.  **Llama-Guard Active Endpoints:** Integrate active API connectors to evaluate real-time prompt responses via sandboxed backend engines.
 2.  **Multi-Modal Attacks:** Expand the red-teaming matrix to evaluate pixel-level adversarial prompt injections in multi-modal models.
@@ -209,7 +228,7 @@ To align the audit findings and mitigation strategies with professional cybersec
 
 ---
 
-## 📂 11. Repository Structure
+## 📂 12. Repository Structure
 
 ```text
 AI-Safety-Bias-Audit/
