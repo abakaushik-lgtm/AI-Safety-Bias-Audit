@@ -183,7 +183,24 @@ npx -y serve .
 
 ---
 
-## 🔮 9. Future Improvements
+## 📚 9. Industry & Regulatory References
+
+To align the audit findings and mitigation strategies with professional cybersecurity and compliance standards, this framework references and adheres to the following industry benchmarks:
+
+*   **NIST AI Risk Management Framework (AI RMF 1.0):** Used to map, measure, and manage system-level generative AI risks. Mitigation patterns align with the NIST core functions of *Govern, Map, Measure, and Manage* to foster trust and accountability.
+    *   *Reference:* [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework)
+*   **OWASP Top 10 for LLM Applications v1.1:** Mapped safety findings directly to standard vulnerabilities (e.g., **LLM01: Prompt Injection**, **LLM02: Insecure Output Handling**, **LLM06: Sensitive Data Disclosure**, and **LLM09: Overreliance**).
+    *   *Reference:* [OWASP LLM Security Project](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+*   **MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems):** Leveraged the ATLAS matrix tactics and techniques to model adversarial bypass vectors including **AML.T0054: LLM Jailbreak**, **AML.T0051: LLM Prompt Injection**, and **AML.T0057: LLM Indirect Prompt Injection**.
+    *   *Reference:* [MITRE ATLAS Matrix](https://atlas.mitre.org/)
+*   **EU Artificial Intelligence Act (Regulation EU 2024/1689):** Audit scope addresses compliance obligations for systems falling under **Annex III (High-Risk AI Systems)** due to deployment in HR, occupational routing, and professional recruitment pipelines.
+    *   *Reference:* [EU AI Act Portal](https://artificialintelligenceact.eu/)
+*   **ISO/IEC 42001:2023 (Information Technology — Artificial Intelligence — Management System):** Followed guidelines to establish a robust Artificial Intelligence Management System (AIMS), ensuring continuous monitoring of semantic drift, ethical alignment, and human-in-the-loop audit logging.
+    *   *Reference:* [ISO/IEC 42001 Standard](https://www.iso.org/standard/81230.html)
+
+---
+
+## 🔮 10. Future Improvements
 
 1.  **Llama-Guard Active Endpoints:** Integrate active API connectors to evaluate real-time prompt responses via sandboxed backend engines.
 2.  **Multi-Modal Attacks:** Expand the red-teaming matrix to evaluate pixel-level adversarial prompt injections in multi-modal models.
@@ -192,7 +209,7 @@ npx -y serve .
 
 ---
 
-## 📂 10. Repository Structure
+## 📂 11. Repository Structure
 
 ```text
 AI-Safety-Bias-Audit/
